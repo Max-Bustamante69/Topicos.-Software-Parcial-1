@@ -4,7 +4,7 @@ from .forms import VueloForm
 from .models import Vuelo
 
 def index(request):
-    return render(request, 'base.html')
+    return render(request, 'home.html')
 
 def registrar_vuelo(request):
     if request.method == 'POST':

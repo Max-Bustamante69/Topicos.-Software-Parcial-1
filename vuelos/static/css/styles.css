@@ -33,19 +33,28 @@ body{
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 2.5rem;
     width: 100%;
-    background-color: white;
     text-transform: capitalize;
     padding: 10px;
+    margin-left: 2rem;
     position: fixed;
     top: 0;
 }
 
+nav .opciones {
+    display: flex;
+    gap: 2rem;
+}
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgba(255, 255, 255, 0.71);
     font-weight: 600;
+}
+
+nav a:hover {
+    color: white;
 }
 
 main {
@@ -128,5 +137,24 @@ th {
     color: black;
 }
 
+.title span {
+    background: linear-gradient(90deg, 
+        #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913, #f6d32b, #ff9913, #ff6f4e, #f25375, #cc4c91, #98509d, #5f5195, #2b4b7d, #003f5b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-size: 400%;
+    animation: shine 10s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
 
 
