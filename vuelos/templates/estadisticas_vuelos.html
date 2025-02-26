@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+{% block content %}
+    <h1>Estadísticas de Vuelos</h1>
+    <p>Vuelos Nacionales: {{ vuelos_nacionales }}</p>
+    <p>Vuelos Internacionales: {{ vuelos_internacionales }}</p>
+    <p>
+      Precio Promedio de Vuelos Nacionales: {{ precio_promedio_nacionales }}
+    </p>
+
+{% endblock %}
